@@ -1,10 +1,12 @@
 nltk
-pdfminer3
-docx2txt
-pyresparser
-streamlit==1.11.0
-nump
--U pip setuptools wheel
 spacy==2.3.5
+pdfminer
+docx2txt
+resume-parser==0.8.4
+pyresparser==1.0.6
+streamlit
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
+
+
+
  
