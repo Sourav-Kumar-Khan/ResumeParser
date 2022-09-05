@@ -1,4 +1,5 @@
 FROM python:3.7.13
+CMD pip3 install --upgrade pip
 WORKDIR /resume
 COPY . /resume
 RUN pip3 install -r requirements.txt
