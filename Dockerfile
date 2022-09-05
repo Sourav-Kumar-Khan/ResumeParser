@@ -1,10 +1,12 @@
 FROM python:3.7.13
-CMD pip3 install --upgrade pip
 WORKDIR /resume
-COPY . /resume
-RUN pip3 install -r requirements.txt
-#RUN pip3 install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz
-#RUN streamlit run web.py
+COPY requirements.txt ./requirements.txt
+
+RUN pip install -r requirements.txt
 EXPOSE 8501
-#ENTRYPOINT ['streamlit','run']
-CMD streamlit run web.py
+COPY ./*.py ./
+ENTRYPOINT ["streamlit","run"]
+
+CMD ["web.py"]
+
+
