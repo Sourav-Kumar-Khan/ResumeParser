@@ -1,5 +1,5 @@
 nltk
-spacy==2.3.5
+--no-cache-dir spacy==2.3.5
 pyresparser
 streamlit==1.11.0
 numpy
